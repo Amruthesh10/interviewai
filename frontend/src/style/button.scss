@@ -1,0 +1,26 @@
+.button {
+  border: none;
+  outline: none;
+  padding-inline: 1.5rem;
+  padding-block: 0.75rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &.primary-button {
+    background-color: #e1034d;
+    color: white;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  // 📱 Mobile (phones)
+  @media (max-width: 600px) {
+    width: 100%;                // full width button
+    padding-block: 0.6rem;      // slightly smaller height
+    font-size: 0.9rem;          // smaller text
+    border-radius: 0.75rem;     // softer radius
+  }
+}
